@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="centered fade-in">
+
+  <audio id="bgMusic" src="background.mp3" loop autoplay></audio>
+
+  <div class="card wide">
+    <h2>Hello, <span id="greetName"></span> 👋</h2>
+    <input type="date" id="dob" />
+    <button onclick="calculateAge()">Calculate Age</button>
+    <button onclick="goBack()">🔙 Back</button>
+    <button onclick="toggleMusic()">🎵 Play/Pause Music</button>
+
+    <div id="output" class="result-box"></div>
+  </div>
+
+</body>
+</html>
